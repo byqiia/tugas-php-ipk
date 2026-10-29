@@ -1,15 +1,14 @@
 <?php
-// data mata kuliah
+// data matkul
 $matkul = [
     ["nama" => "Pemrograman Web",     "sks" => 3, "nilai" => 88],
-    ["nama" => "Sistem Data",         "sks" => 3, "nilai" => 78],
+    ["nama" => "Sistem Basis Data",         "sks" => 3, "nilai" => 78],
     ["nama" => "Jaringan Komputer",   "sks" => 3, "nilai" => 65],
     ["nama" => "Struktur Data",       "sks" => 3, "nilai" => 82],
     ["nama" => "Statistika",          "sks" => 2, "nilai" => 45],
-    ["nama" => "Pendidikan Pancasila", "sks" => 2, "nilai" => 90],
+    ["nama" => " Pancasila", "sks" => 2, "nilai" => 90],
 ];
 
-// ubah nilai angka jadi huruf dan bobot
 function hitungBobot($nilai) {
     if ($nilai >= 80) {
         return ["huruf" => "A", "bobot" => 4.0];
@@ -24,7 +23,6 @@ function hitungBobot($nilai) {
     }
 }
 
-// hitung IPS
 $total_sks = 0;
 $total_mutu = 0;
 
@@ -36,13 +34,13 @@ foreach ($matkul as $mk) {
 
 $ips = $total_mutu / $total_sks;
 
-// batas sks semester depan
 if ($ips >= 3.00) {
     $maks_sks = 24;
 } else {
     $maks_sks = 20;
 }
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -86,3 +84,4 @@ if ($ips >= 3.00) {
     <p>Maksimal SKS semester depan: <?= $maks_sks ?> SKS</p>
 </body>
 </html>
+
