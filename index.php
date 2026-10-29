@@ -1,11 +1,10 @@
 <?php
-// data matkul
 $matkul = [
-    ["nama" => "Pemrograman Web",     "sks" => 3, "nilai" => 88],
-    ["nama" => "Sistem Basis Data",         "sks" => 3, "nilai" => 78],
-    ["nama" => "Jaringan Komputer",   "sks" => 3, "nilai" => 65],
-    ["nama" => "Struktur Data",       "sks" => 3, "nilai" => 82],
-    ["nama" => "Statistika",          "sks" => 2, "nilai" => 45],
+    ["nama" => "Pemrograman Web","sks" => 3, "nilai" => 88],
+    ["nama" => "Sistem Basis Data","sks" => 3, "nilai" => 78],
+    ["nama" => "Jaringan Komputer","sks" => 3, "nilai" => 65],
+    ["nama" => "Struktur Data","sks" => 3, "nilai" => 82],
+    ["nama" => "Statistika","sks" => 2, "nilai" => 45],
     ["nama" => " Pancasila", "sks" => 2, "nilai" => 90],
 ];
 
